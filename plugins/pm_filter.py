@@ -109,7 +109,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
 
@@ -117,7 +117,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
                 
@@ -129,7 +129,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
 
@@ -137,7 +137,7 @@ async def next_page(bot, query):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
     try:
@@ -1233,6 +1233,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_reply_markup(reply_markup)
     await query.answer('𝖯𝗂𝗋𝖺𝖼𝗒 𝗂𝗌 𝖢𝗋𝗂𝗆𝖾 !')
 
+    elif query.data == "close":
+        await query.message.delete()
+    elif query.data == 'tips':
+        await query.answer("=> Ask with correct spelling\n=> Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
+    elif query.data == 'infos':
+        await query.answer("⚠︎ Information ⚠︎\n\nAfter 3 minutes this message will be automatically deleted\n\nIf you do not see the requested movie / series file, look at the next page\n\nⒸᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ", True)
+    elif query.data == 'infoss':
+        await query.answer("FILES FORWARD TO YOUR SAVED MESSAGES. All files here Gets Deleted With in 5 Minutes", True)
+    elif query.data == 'inf':
+        await query.answer("⚠︎ ഇവിടെ ഒന്നും നോക്കണ്ട ഉണ്ണി ", True)
+    elif query.data == 'imdb':
+        await query.answer("{search}", True)
+    elif query.data == 'series':
+        await query.answer("sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ sᴇʀɪᴇs ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : Alive ᴏʀ Alive S01E01\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ", True)
+    try: await query.answer('Piracy Is Crime') 
+
+    except: pass
+
     
 async def auto_filter(client, msg, spoll=False):
     reqstr1 = msg.from_user.id if msg.from_user else 0
@@ -1289,7 +1307,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
 
@@ -1297,7 +1315,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
                 
@@ -1309,7 +1327,7 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
 
@@ -1317,13 +1335,23 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'🐠{search}🐠', 'tips'),
-                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'info')
+                InlineKeyboardButton(f'📝ᴛɪᴩꜱ', 'infoss')
             ]
             )
 
     btn.insert(0, [
         InlineKeyboardButton(f'🔰{search}🔰', 'rkbtn')
     ])
+    btn.insert(14,
+        [
+            InlineKeyboardButton(f"🐟{message.chat.title}🐟", 'info'),
+            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+        ]
+    )
+
+    m=await message.reply_sticker("CAACAgUAAx0CQTCW0gABB5EUYkx6-OZS7qCQC6kNGMagdQOqozoAAgQAA8EkMTGJ5R1uC7PIECME") 
+    await asyncio.sleep(2)
+    await m.delete()
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
@@ -1389,7 +1417,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention}\n📁ꜰɪʟᴇ ɴᴀᴍᴇ : </b>"
+        cap = f"<b>👮‍♂ {message.from_user.mention} ɴᴏᴛɪᴄᴇ :ɪ𝙵 ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ 𝙵ɪʟᴇ𝚂 ᴏ𝙵 ᴛʜɪ𝚂 ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀ𝚂ᴋᴇᴅ 𝙵ᴏʀ. ʟᴏᴏᴋ ᴀᴛ ɴᴇ𝚇ᴛ ᴘᴀɢᴇ🔎\n©️քօաɛʀɛɖ ɮʏ :{message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
@@ -1458,6 +1486,7 @@ async def auto_filter(client, msg, spoll=False):
                     await asyncio.sleep(300)
                     await fuk.delete()
                     await message.delete()
+                    await message
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
                 await save_group_settings(grpid, 'auto_delete', True)
@@ -1466,8 +1495,10 @@ async def auto_filter(client, msg, spoll=False):
                     await asyncio.sleep(300)
                     await fuk.delete()
                     await message.delete()
+                    await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
     if spoll:
         await msg.message.delete()
+        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
 
 
 async def advantage_spell_chok(client, msg): #modified spell check
@@ -1537,19 +1568,11 @@ async def advantage_spell_chok(client, msg): #modified spell check
     k = await msg.reply_sticker("CAACAgUAAx0CQTCW0gABB5EUYkx6-OZS7qCQC6kNGMagdQOqozoAAgQAA8EkMTGJ5R1uC7PIECME") 
     await asyncio.sleep(1)
     await k.delete()
-    k = await msg.reply_photo(
-        photo= "https://telegra.ph/file/8a8ba3e824e1d2482253f.jpg",
-        caption=f"<b>📍ഹലോ നിങ്ങളുടെ സിനിമ ഇതിലുണ്ടോന്ന് പരിശോധിക്കുക</b>",
-        parse_mode="html",
-        reply_markup=InlineKeyboardMarkup(btn))
-
-    await asyncio.sleep(60)
-
-    await k.delete()
     spell_check_del = await msg.reply_photo(
-        photo=(SPELL_IMG),
-        caption=(script.CUDNT_FND.format(mv_rqst)),
-        reply_markup=InlineKeyboardMarkup(btn)
+        photo= "https://telegra.ph/file/8a8ba3e824e1d2482253f.jpg",
+        caption=f"<b>📍See that Your movie is here../</b>",
+        parse_mode=enums.ParseMode.HTML,
+        reply_markup=InlineKeyboardMarkup(btn))
     )
     try:
         if settings['auto_delete']:
@@ -1560,7 +1583,7 @@ async def advantage_spell_chok(client, msg): #modified spell check
             await save_group_settings(grpid, 'auto_delete', True)
             settings = await get_settings(message.chat.id)
             if settings['auto_delete']:
-                await asyncio.sleep(30)
+                await asyncio.sleep(60)
                 await spell_check_del.delete()
 
 
