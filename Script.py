@@ -1,4 +1,5 @@
 class script(object):
+    STARTL_TXT = """If you need an private or need to deploy a bot click the below button 👇👇👇"""
     START_TXT = """𝗛ᴇʟʟᴏ {},
 
  𝗠ʏ 𝗡ᴀᴍᴇ ɪ𝘀  ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ
@@ -6,7 +7,7 @@ class script(object):
 𝖨'𝗆 𝖺 𝖴𝗌𝖾𝗋-𝖥𝗋𝗂𝖾𝗇𝖽𝗅𝗒 𝗀𝗋𝗈𝗎𝗉 𝖬𝖺𝗇𝖺𝗀𝖾𝗋 
 ➢ <b>Build Version</b>: <code>V2.1.0 [BETA]</code>
 ➢ <b>Speciality</b>: <code>Movie Provider</code>
-𝖢𝗅𝗂𝖼𝗄 <b>/help or Help</b> 𝗍𝗈 𝗆𝗒 𝖥𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝗌<a href='https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg'>.</a>"""
+𝖢𝗅𝗂𝖼𝗄 <b>/help or Help</b> 𝗍𝗈 𝗆𝗒 𝖥𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝗌</a>"""
 
     HELP_TXT = """<b>𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:</b>"""
 
