@@ -1560,8 +1560,8 @@ async def advantage_spell_chok(client, msg): #modified spell check
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')],[InlineKeyboardButton("song", url="https://imdb.com")])
     btn.insert(0,
             [
-                InlineKeyboardButton(f'ɪɴғᴏ', 'im'),
-                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'movies'),
+                InlineKeyboardButton(f'ɪɴғᴏ', 'info'),
+                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'series'),
                 InlineKeyboardButton(f'sᴇʀɪᴇs', 'series')
             ]
     )              
