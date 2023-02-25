@@ -46,9 +46,9 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAx0CQTCW0gABB5EUYkx6-OZS7qCQC6kNGMagdQOqozoAAgQAA8EkMTGJ5R1uC7PIECME") 
         await asyncio.sleep(2)
         await m.delete()
-        await message.reply_photo("https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg")
-        await message.reply_text(
-            text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_photo(
+            photo="https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg"
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -92,9 +92,9 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAx0CQTCW0gABB5EUYkx6-OZS7qCQC6kNGMagdQOqozoAAgQAA8EkMTGJ5R1uC7PIECME") 
         await asyncio.sleep(2)
         await m.delete()
-        await message.reply_photo("https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg")
-        await message.reply_text(
-            text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_photo(
+            photo="https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg"
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
