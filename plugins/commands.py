@@ -47,7 +47,7 @@ async def start(client, message):
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
-            photo="https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg"
+            photo="https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -93,7 +93,7 @@ async def start(client, message):
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
-            photo="https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg"
+            photo="https://telegra.ph/file/6e5812fbd4b261d3260e8.jpg",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
