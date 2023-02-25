@@ -1413,6 +1413,7 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(300)
                         await hehe.delete()
                         await message.delete()
+                        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
@@ -1421,6 +1422,7 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(300)
                         await hehe.delete()
                         await message.delete()
+                        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.</b>")
@@ -1433,6 +1435,7 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(300)
                         await hmm.delete()
                         await message.delete()
+                        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
@@ -1441,6 +1444,7 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(300)
                         await hmm.delete()
                         await message.delete()
+                        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
         except Exception as e:
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.")
@@ -1452,6 +1456,7 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(300)
                         await fek.delete()
                         await message.delete()
+                        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                 except KeyError:
                     grpid = await active_connection(str(message.from_user.id))
                     await save_group_settings(grpid, 'auto_delete', True)
@@ -1460,6 +1465,7 @@ async def auto_filter(client, msg, spoll=False):
                         await asyncio.sleep(300)
                         await fek.delete()
                         await message.delete()
+                        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(f"<b>👋 𝖧𝖾𝗒 {message.from_user.mention} \n📁 {str(total_results)} 𝖱𝖾𝗌𝗎𝗅𝗍𝗌 𝖺𝗋𝖾 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.</b>")
@@ -1470,7 +1476,7 @@ async def auto_filter(client, msg, spoll=False):
                     await asyncio.sleep(300)
                     await fuk.delete()
                     await message.delete()
-                    await message
+                    await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
             except KeyError:
                 grpid = await active_connection(str(message.from_user.id))
                 await save_group_settings(grpid, 'auto_delete', True)
@@ -1479,10 +1485,10 @@ async def auto_filter(client, msg, spoll=False):
                     await asyncio.sleep(300)
                     await fuk.delete()
                     await message.delete()
-                    await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
+                    await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
     if spoll:
         await msg.message.delete()
-        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️"
+        await message.reply_text(text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
 
 
 async def advantage_spell_chok(client, msg): #modified spell check
