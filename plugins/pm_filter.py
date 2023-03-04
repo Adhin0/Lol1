@@ -1562,7 +1562,7 @@ async def advantage_spell_chok(client, msg): #modified spell check
         photo= "https://telegra.ph/file/8a8ba3e824e1d2482253f.jpg",
         caption=f"<b>📍See that Your movie is here../</b>",
         parse_mode=enums.ParseMode.HTML,
-        reply_markup=InlineKeyboardMarkup(btn))
+        reply_markup=InlineKeyboardMarkup(btn)
     )
     try:
         if settings['auto_delete']:
