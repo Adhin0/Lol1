@@ -1547,7 +1547,7 @@ async def advantage_spell_chok(client, msg): #modified spell check
         ]
         for k, movie_name in enumerate(movielist)
     ]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')],[InlineKeyboardButton("song", url="https://imdb.com")])
+    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     btn.insert(0,
             [
                 InlineKeyboardButton(f'ɪɴғᴏ', 'info'),
