@@ -1559,8 +1559,8 @@ async def advantage_spell_chok(client, msg): #modified spell check
     await asyncio.sleep(1)
     await k.delete()
     spell_check_del = await msg.reply_photo(
-        photo= "https://telegra.ph/file/8a8ba3e824e1d2482253f.jpg",
-        caption=f"<b>📍See that Your movie is here../</b>",
+        photo= "https://telegra.ph/file/e1bbc40f661388ea5af5a.jpg",
+        caption=f"<b>📍I couldn't find anything related to {search}\nDid you mean any one of these../</b>",
         parse_mode=enums.ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup(btn)
     )
